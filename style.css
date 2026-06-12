@@ -1,30 +1,100 @@
+/* พื้นหลัง */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(135deg, #fff7c7, #ffe082);
+    color: #555;
 }
 
+/* ส่วนหัว */
 header {
-    background: #4CAF50;
+    background: linear-gradient(90deg, #ffca28, #ffd54f);
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 50px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 header h1 {
     margin: 0;
+    font-size: 42px;
 }
 
 header p {
-    margin: 5px 0 0;
+    font-size: 18px;
 }
 
+/* กล่องเนื้อหา */
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
+    max-width: 900px;
+    margin: 25px auto;
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* หัวข้อ */
+h2 {
+    color: #f9a825;
+    border-left: 6px solid #ffd54f;
+    padding-left: 12px;
+}
+
+/* การ์ด */
+.card {
+    background: #fffde7;
+    border-left: 5px solid #ffca28;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+
+/* รายการ */
+ul li {
+    margin: 10px 0;
+}
+
+/* รูปโปรไฟล์ */
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ffd54f;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ปุ่ม */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ffca28;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f9a825;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #ffca28;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
